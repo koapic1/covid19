@@ -24,20 +24,22 @@ body { background: repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.05), r
 
 .calendar .header .monthBox .month { font-weight: 700; }
 
-.calendar .days { margin-bottom: 10px; margin-top: 10px; }
-
 .calendar .days ul, .calendar .dates ul { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; }
 
 .calendar .days ul li, .calendar .dates ul li { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; width: calc(100% / 7 - 4px); margin: 2px; position: relative; cursor: pointer; }
 
-.calendar .days ul li.on span, .calendar .dates ul li.on span { background-color: #111; }
+.calendar .days ul li.on span, .calendar .dates ul li.on span { background-color: darkslategray; }
 
-.calendar .days ul li.sun span, .calendar .dates ul li.sun span { background-color: red; }
+.calendar .days ul li.sun span, .calendar .dates ul li.sun span { color: crimson; }
 
-.calendar .days ul li.today span, .calendar .dates ul li.today span { background-color: #1194ec; font-weight: 700; text-shadow: 1px 1px 0px #0e76bc,2px 2px 0px #0e76bc,3px 3px 0px #0e76bc,4px 4px 0px #0e76bc,5px 5px 0px #0e76bc,6px 6px 0px #0e76bc,7px 7px 0px #0e76bc,8px 8px 0px #0e76bc,9px 9px 0px #0e76bc,10px 10px 0px #0e76bc,11px 11px 0px #0e76bc,12px 12px 0px #0e76bc,13px 13px 0px #0e76bc,14px 14px 0px #0e76bc,15px 15px 0px #0e76bc,16px 16px 0px #0e76bc,17px 17px 0px #0e76bc,18px 18px 0px #0e76bc,19px 19px 0px #0e76bc,20px 20px 0px #0e76bc,21px 21px 0px #0e76bc,22px 22px 0px #0e76bc,23px 23px 0px #0e76bc,24px 24px 0px #0e76bc,25px 25px 0px #0e76bc,26px 26px 0px #0e76bc,27px 27px 0px #0e76bc,28px 28px 0px #0e76bc,29px 29px 0px #0e76bc,30px 30px 0px #0e76bc;; }
+.calendar .days ul li.sat span, .calendar .dates ul li.sat span { color: mediumblue; }
+
+.calendar .days ul li.today span, .calendar .dates ul li.today span { background-color: darkslategray; font-weight: 700; text-shadow: 1px 1px 0px #1c2f2f,2px 2px 0px #1c2f2f,3px 3px 0px #1c2f2f,4px 4px 0px #1c2f2f,5px 5px 0px #1c2f2f,6px 6px 0px #1c2f2f,7px 7px 0px #1c2f2f,8px 8px 0px #1c2f2f,9px 9px 0px #1c2f2f,10px 10px 0px #1c2f2f,11px 11px 0px #1c2f2f,12px 12px 0px #1c2f2f,13px 13px 0px #1c2f2f,14px 14px 0px #1c2f2f,15px 15px 0px #1c2f2f,16px 16px 0px #1c2f2f,17px 17px 0px #1c2f2f,18px 18px 0px #1c2f2f,19px 19px 0px #1c2f2f,20px 20px 0px #1c2f2f,21px 21px 0px #1c2f2f,22px 22px 0px #1c2f2f,23px 23px 0px #1c2f2f,24px 24px 0px #1c2f2f,25px 25px 0px #1c2f2f,26px 26px 0px #1c2f2f,27px 27px 0px #1c2f2f,28px 28px 0px #1c2f2f,29px 29px 0px #1c2f2f,30px 30px 0px #1c2f2f;; }
 
 .calendar .days ul li.blank, .calendar .dates ul li.blank { opacity: 0; visibility: hidden; pointer-events: none; }
 
 .calendar .days ul li:before, .calendar .dates ul li:before { content: ""; display: block; padding-top: 100%; }
 
 .calendar .days ul li span, .calendar .dates ul li span { position: absolute; overflow: hidden; left: 0; top: 0; width: 100%; height: 100%; background-color: #666; color: #fff; border-radius: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; font-size: 12px; -webkit-transition: 0.25s; transition: 0.25s; }
+
+.calendar .days > ul > li > span { background-color: #fff; color: #111; font-size: 16px; font-weight: 500; }

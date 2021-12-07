@@ -82,10 +82,6 @@ body {
             }
         }
     }
-    .days {
-        margin-bottom: 10px;
-        margin-top: 10px;
-    }
     .days,
     .dates {
         ul {
@@ -101,19 +97,24 @@ body {
                 cursor: pointer;
                 &.on {
                     span {
-                        background-color: #111;
+                        background-color: darkslategray;
                     }
                 }
                 &.sun {
                     span {
-                        background-color: red;
+                        color: crimson;
+                    }
+                }
+                &.sat {
+                    span {
+                        color: mediumblue;
                     }
                 }
                 &.today {
                     span {
-                        background-color: rgb(17, 148, 236);
+                        background-color: darkslategray;
                         font-weight: 700;
-                        @include longShadow(darken(rgb(17, 148, 236), 10), right, 30);
+                        @include longShadow(darken(darkslategray, 10), right, 30);
                     }
                 }
                 &.blank {
@@ -141,6 +142,18 @@ body {
                     justify-content: center;
                     font-size: 12px;
                     transition: 0.25s;
+                }
+            }
+        }
+    }
+    .days {
+        > ul {
+            > li {
+                > span {
+                    background-color: #fff;
+                    color: #111;
+                    font-size: 16px;
+                    font-weight: 500;
                 }
             }
         }
